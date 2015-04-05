@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.SplitPane?>
+
+<SplitPane dividerPositions="0.2309197651663405" prefHeight="160.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <SplitPane dividerPositions="0.749656121045392" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+          <items>
+              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                  <Tab text="Untitled Tab 1">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Untitled Tab 2">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                </tabs>
+              </TabPane>
+              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                  <Tab text="Untitled Tab 1">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Untitled Tab 2">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                </tabs>
+              </TabPane>
+          </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.749656121045392" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+          <items>
+              <SplitPane dividerPositions="0.7049808429118773" prefHeight="160.0" prefWidth="200.0">
+                <items>
+                    <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                      <tabs>
+                        <Tab text="Untitled Tab 1">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="Untitled Tab 2">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                      </tabs>
+                    </TabPane>
+                    <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                      <tabs>
+                        <Tab text="Untitled Tab 1">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="Untitled Tab 2">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                      </tabs>
+                    </TabPane>
+                </items>
+              </SplitPane>
+              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                  <Tab text="Untitled Tab 1">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Untitled Tab 2">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                </tabs>
+              </TabPane>
+          </items>
+        </SplitPane>
+    </items>
+</SplitPane>
+
