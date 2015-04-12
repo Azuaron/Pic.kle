@@ -3,6 +3,13 @@ package com.azdes.tresaver;
 import java.io.IOException;
 import java.net.URL;
 
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.azdes.connect.flickr.FlickrConnect;
+import com.flickr4java.flickr.Flickr;
+import com.flickr4java.flickr.FlickrException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +17,10 @@ import javafx.scene.control.SplitPane;
 import javafx.scene.control.ToolBar;
 import javafx.stage.Stage;
 
+/**
+ * Main app for the GUI
+ * @author sbrougher
+ */
 public class TresaverApp extends Application {
     private Stage primaryStage;
     private SplitPane rootLayout;
@@ -19,14 +30,22 @@ public class TresaverApp extends Application {
     private URL toolBarRes = TresaverApp.class.getResource("/views/TresaverToolBar.fxml");
     private URL workAreaRes = TresaverApp.class.getResource("/views/WorkArea.fxml");
     
+    private FlickrConnect flickrConn;
+    private AbstractApplicationContext context;
+    
     public static void main(String[] args) {
         launch(args);
     }
     
     @Override
     public void start(Stage ps) {
+        context = new ClassPathXmlApplicationContext("spring-config.xml");
+        context.registerShutdownHook();
+        
+        flickrConn = context.getBean(FlickrConnect.class);
+        
         primaryStage = ps;
-        primaryStage.setTitle("Scratch");
+        primaryStage.setTitle("Tresaver");
         loadLayout();
     }
     
@@ -46,8 +65,14 @@ public class TresaverApp extends Application {
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
+            
+            
+            Flickr f = flickrConn.connect();
+            f.getPhotosInterface().getContactsPhotos(100, false, false, true);
         } catch (IOException ioe) {
             ioe.printStackTrace();
+        } catch (FlickrException e) {
+            e.printStackTrace();
         }
     }
     

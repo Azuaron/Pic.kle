@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 /**
  * Unit test for simple App.
  */
-@ContextConfiguration(locations = { "classpath:spring-test-config.xml" })
+@ContextConfiguration(locations = { "classpath:spring-config.xml" })
 public class TresaverAppTest extends AbstractTestNGSpringContextTests {
     /**
      * Rigourous Test :-)

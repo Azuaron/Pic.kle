@@ -1,2 +1,5 @@
-key=<WHERE'S THE GATEKEEPER?>
-secret=<SHHHHH>
+flickr.key=<WHERE'S THE GATEKEEPER?>
+flickr.secret=<SHHHHH>
+flickr.authToken=<For testing/dev purposes>
+flickr.authSecret=<For testing/dev purposes>
+flickr.authRaw=<For testing/dev purposes>
